@@ -25,7 +25,6 @@ public class SortingMethods {
         int swaps = -1;
         while(swaps!= 0){
             swaps=0;
-            //This only compares the first letter, change
             for(int i =0;i<arr.length-1;i++){
                 if(arr[i].compareTo(arr[i + 1]) > 0){
                     SortingUtil.swap(arr,i,i+1);
