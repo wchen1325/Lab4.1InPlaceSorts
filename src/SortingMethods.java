@@ -1,5 +1,5 @@
 
-public class BubbleSort {
+public class SortingMethods {
     public static void bubble(int[] arr){
         int[] arrTemp= arr;
         int swaps = -1;
@@ -19,6 +19,8 @@ public class BubbleSort {
             System.out.println("error");
         }
     }
+
+
 
 
 }
