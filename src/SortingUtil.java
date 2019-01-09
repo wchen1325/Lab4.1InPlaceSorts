@@ -5,6 +5,12 @@ public class SortingUtil {
         arr[j]=temp;
     }
 
+    public static void swap(String[] arr, int i, int j){
+        String temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+
     public static int[] randIntArr(int count){
         int[] arr = new int[count];
         for(int i = 0; i<arr.length;i++){
@@ -35,10 +41,40 @@ public class SortingUtil {
         return(aSum==bSum);
     }
 
+    public static boolean isSorted(String[] arr){
+        for(int i = 0; i < arr.length-1; i++){
+            if (arr[i].compareTo(arr[i+1]) > 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /*public static boolean checkSum(String[] before, String[] after){
+        int bSum=0;
+        int aSum=0;
+        if (!(before.length==after.length)){
+            return false;
+        }
+        for(int i =0; i <before.length -1; i++){
+            bSum=bSum+before[i];
+            aSum=aSum+after[i];
+        }
+        return(aSum==bSum);
+    }*/
+
     public static void printArray(int[] arr){
         String str ="";
         for (int i = 0; i<arr.length;i++){
             str=str + String.valueOf(arr[i]) + ", ";
+        }
+        System.out.println(str);
+    }
+
+    public static void printArray(String[] arr){
+        String str ="";
+        for (int i = 0; i<arr.length;i++){
+            str=str + arr[i] + ", ";
         }
         System.out.println(str);
     }

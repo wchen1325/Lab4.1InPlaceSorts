@@ -6,5 +6,13 @@ public class Runner {
 
 
         System.out.println("Time Taken: " + time);
+
+        String[] list1 = {"hi", "hello", "meow"};
+        long time2 = System.nanoTime();
+        SortingMethods.bubbleSort(list1);
+        time2=System.nanoTime() - time2;
+
+
+        System.out.println("Time Taken: " + time2);
     }
 }
