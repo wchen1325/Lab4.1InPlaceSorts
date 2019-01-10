@@ -19,6 +19,16 @@ public class SortingUtil {
         return arr;
     }
 
+    public static int[] conpyIntArray(int[] arr) {
+        int[] arr1 = new int[arr.length];
+        for(int i = 0; i<arr.length;i++){
+            arr1[i]=arr[i];
+        }
+        return arr1;
+    }
+
+
+
     public static boolean isSorted(int[] arr){
         for(int i = 0; i < arr.length-1; i++){
             if (arr[i]>arr[i+1]){
@@ -79,17 +89,20 @@ public class SortingUtil {
         System.out.println(str);
     }
 
-}
-public String[] randomStringArr(int num, int length){
+    public String[] randomStringArr(int num, int length){
 
-    String [] arr = new String [num];
-    while (num > 0)
-    {
-
-        int i = 0;
-        String s = " ";
-        while (i < length)
+        String [] arr = new String [num];
+        while (num > 0)
         {
 
-            char c = (char)(Math.random()*26)+97);
-            s = s + c
+            int i = 0;
+            String s = " ";
+            while (i < length)
+            {
+
+                char c = (char)(Math.random()*26)+97);
+                s = s + c;
+            }
+        }
+    }
+}

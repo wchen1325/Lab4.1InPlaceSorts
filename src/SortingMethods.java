@@ -40,6 +40,22 @@ public class SortingMethods {
         }
     }
 
+    public static void selectionSort(int[] arr){
+        int minPos = 0;
+        //i == currentPostion;
+        for(int i = 0; i < arr.length - 1;i++){
+            int minValue = arr[i];
+            minPos = i;
+            for(int j = i+1; j<arr.length; j++){
+                if(minValue>arr[j]){
+                    minValue=arr[j];
+                    minPos=j;
+                }
+            }
+            SortingUtil.swap(arr,i,minPos);
+        }
+    }
+
 
 
 }
