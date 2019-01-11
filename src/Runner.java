@@ -16,7 +16,7 @@ public class Runner {
 
         //selectionSort
         long time3 = System.nanoTime();
-        SortingMethods.selectionSort(SortingUtil.randDoubleArr(100,4));
+        SortingMethods.selectionSort(SortingUtil.randDoubleArr(100,10000));
         time3=System.nanoTime() - time3;
         System.out.println("selectionSort(int) Time Taken: " + time3+"\n");
 

@@ -25,10 +25,10 @@ public class SortingUtil {
         return arr;
     }
 
-    public static double[] randDoubleArr(int count, int decCount){
+    public static double[] randDoubleArr(int count, double max){
         double[] arr = new double[count];
         for(int i = 0; i<arr.length;i++){
-            arr[i] = ((int)(Math.random() * 10001)) / (10*decCount);
+            arr[i] = Math.random() * max;
         }
         return arr;
     }
