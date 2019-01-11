@@ -59,7 +59,7 @@ public class SortingMethods {
 
         for (int i=1; i< arr.length; i++){
             int currentPos=i;
-            while(!currentPos==0 && arr.[currentPos]< arr.[currentPos-1]){
+            while(!(currentPos==0) && arr[currentPos]< arr[currentPos-1]){
                 SortingUtil.swap(arr, currentPos, currentPos-1);
                 currentPos--;
 
