@@ -5,6 +5,12 @@ public class SortingUtil {
         arr[j]=temp;
     }
 
+    public static void swap(double[] arr, int i, int j){
+        double temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+
     public static void swap(String[] arr, int i, int j){
         String temp = arr[i];
         arr[i]=arr[j];
@@ -15,6 +21,27 @@ public class SortingUtil {
         int[] arr = new int[count];
         for(int i = 0; i<arr.length;i++){
             arr[i] = (int)(Math.random() * 10001);
+        }
+        return arr;
+    }
+
+    public static String[] randomStringArr(int num, int length){
+
+        String [] arr = new String [num];
+        while (num > 0)
+        {
+
+            int i = 0;
+            String s = "";
+            while (i < length)
+            {
+
+                char c = (char)((Math.random()*26)+97);
+                s = s + c;
+                i++;
+            }
+            num--;
+            arr[num] = s;
         }
         return arr;
     }
@@ -81,6 +108,14 @@ public class SortingUtil {
         System.out.println(str);
     }
 
+    public static void printArray(double[] arr){
+        String str ="";
+        for (int i = 0; i<arr.length;i++){
+            str=str + String.valueOf(arr[i]) + ", ";
+        }
+        System.out.println(str);
+    }
+
     public static void printArray(String[] arr){
         String str ="";
         for (int i = 0; i<arr.length;i++){
@@ -89,24 +124,5 @@ public class SortingUtil {
         System.out.println(str);
     }
 
-    public static String[] randomStringArr(int num, int length){
 
-        String [] arr = new String [num];
-        while (num > 0)
-        {
-
-            int i = 0;
-            String s = "";
-            while (i < length)
-            {
-
-                char c = (char)((Math.random()*26)+97);
-                s = s + c;
-                i++;
-            }
-            num--;
-            arr[num] = s;
-        }
-        return arr;
-    }
 }
