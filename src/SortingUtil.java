@@ -89,18 +89,18 @@ public class SortingUtil {
         System.out.println(str);
     }
 
-    public String[] randomStringArr(int num, int length){
+    public static String[] randomStringArr(int num, int length){
 
         String [] arr = new String [num];
         while (num > 0)
         {
 
             int i = 0;
-            String s = " ";
+            String s = "";
             while (i < length)
             {
 
-                char c = (char)(Math.random()*26)+97);
+                char c = (char)((Math.random()*26)+97);
                 s = s + c;
                 i++;
             }
