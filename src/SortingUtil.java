@@ -102,7 +102,11 @@ public class SortingUtil {
 
                 char c = (char)(Math.random()*26)+97);
                 s = s + c;
+                i++;
             }
+            num--;
+            arr[num] = s;
         }
+        return arr;
     }
 }
