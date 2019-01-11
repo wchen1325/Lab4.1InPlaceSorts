@@ -55,6 +55,17 @@ public class SortingMethods {
             SortingUtil.swap(arr,i,minPos);
         }
     }
+    public static void insertionSort(int[]arr){
+
+        for (int i=1; i< arr.length; i++){
+            int currentPos=i;
+            while(!currentPos==0 && arr.[currentPos]< arr.[currentPos-1]){
+                SortingUtil.swap(arr, currentPos, currentPos-1);
+                currentPos--;
+
+            }
+        }
+    }
 
 
 
