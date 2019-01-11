@@ -12,12 +12,8 @@ public class SortingMethods {
                 }
             }
         }
-        if(SortingUtil.isSorted(arr)&& SortingUtil.checkSum(arrTemp, arr)) {
-            SortingUtil.printArray(arr);
-        }
-        else{
-            System.out.println("error");
-        }
+
+        SortingUtil.printArray(arr);
     }
 
     public static void bubbleSort(String[] arr){
@@ -32,12 +28,7 @@ public class SortingMethods {
                 }
             }
         }
-        if(SortingUtil.isSorted(arr)/*&& SortingUtil.checkSum(arrTemp, arr)*/) {
-            SortingUtil.printArray(arr);
-        }
-        else{
-            System.out.println("error");
-        }
+        SortingUtil.printArray(arr);
     }
 
     public static void selectionSort(int[] arr){
@@ -53,7 +44,7 @@ public class SortingMethods {
                 }
             }
             SortingUtil.swap(arr,i,minPos);
-        }
+        }SortingUtil.printArray(arr);
     }
     public static void insertionSort(int[]arr){
 
@@ -65,6 +56,7 @@ public class SortingMethods {
 
             }
         }
+        SortingUtil.printArray(arr);
     }
 
 
