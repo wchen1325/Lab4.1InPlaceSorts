@@ -1,7 +1,6 @@
 
 public class SortingMethods {
     public static void bubbleSort(int[] arr){
-        int[] arrTemp= arr;
         int swaps = -1;
         while(swaps!= 0){
             swaps=0;
@@ -17,7 +16,6 @@ public class SortingMethods {
     }
 
     public static void bubbleSort(String[] arr){
-        String[] arrTemp= arr;
         int swaps = -1;
         while(swaps!= 0){
             swaps=0;

@@ -25,6 +25,14 @@ public class SortingUtil {
         return arr;
     }
 
+    public static double[] randDoubleArr(int count, int decCount){
+        double[] arr = new double[count];
+        for(int i = 0; i<arr.length;i++){
+            arr[i] = ((int)(Math.random() * 10001)) / (10*decCount);
+        }
+        return arr;
+    }
+
     public static String[] randomStringArr(int num, int length){
 
         String [] arr = new String [num];
@@ -46,7 +54,7 @@ public class SortingUtil {
         return arr;
     }
 
-    public static int[] conpyIntArray(int[] arr) {
+    public static int[] copyIntArray(int[] arr) {
         int[] arr1 = new int[arr.length];
         for(int i = 0; i<arr.length;i++){
             arr1[i]=arr[i];
