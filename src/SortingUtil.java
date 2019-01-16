@@ -17,6 +17,10 @@ public class SortingUtil {
         arr[j]=temp;
     }
 
+
+
+
+
     public static int[] randIntArr(int count){
         int[] arr = new int[count];
         for(int i = 0; i<arr.length;i++){
@@ -54,6 +58,10 @@ public class SortingUtil {
         return arr;
     }
 
+
+
+
+
     public static int[] copyIntArray(int[] arr) {
         int[] arr1 = new int[arr.length];
         for(int i = 0; i<arr.length;i++){
@@ -62,15 +70,12 @@ public class SortingUtil {
         return arr1;
     }
 
-
-
-    public static boolean isSorted(int[] arr){
-        for(int i = 0; i < arr.length-1; i++){
-            if (arr[i]>arr[i+1]){
-                return false;
-            }
+    public static double[] copyDoubleArray(double[] arr) {
+        double[] arr1 = new double[arr.length];
+        for(int i = 0; i<arr.length;i++){
+            arr1[i]=arr[i];
         }
-        return true;
+        return arr1;
     }
 
     public static boolean checkSum(int[] before, int[] after){
@@ -86,6 +91,42 @@ public class SortingUtil {
         return(aSum==bSum);
     }
 
+    public static boolean checkSum(double[] before, double[] after){
+        double bSum=0;
+        double aSum=0;
+        if (!(before.length==after.length)){
+            return false;
+        }
+        for(int i =0; i <before.length -1; i++){
+            bSum=bSum+before[i];
+            aSum=aSum+after[i];
+        }
+        return(aSum==bSum);
+    }
+
+
+
+
+
+    public static boolean isSorted(int[] arr){
+        for(int i = 0; i < arr.length-1; i++){
+            if (arr[i]>arr[i+1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isSorted(double[] arr){
+        for(int i = 0; i < arr.length-1; i++){
+            if (arr[i]>arr[i+1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     public static boolean isSorted(String[] arr){
         for(int i = 0; i < arr.length-1; i++){
             if (arr[i].compareTo(arr[i+1]) > 0){
@@ -95,18 +136,10 @@ public class SortingUtil {
         return true;
     }
 
-    /*public static boolean checkSum(String[] before, String[] after){
-        int bSum=0;
-        int aSum=0;
-        if (!(before.length==after.length)){
-            return false;
-        }
-        for(int i =0; i <before.length -1; i++){
-            bSum=bSum+before[i];
-            aSum=aSum+after[i];
-        }
-        return(aSum==bSum);
-    }*/
+
+
+
+
 
     public static void printArray(int[] arr){
         String str ="";

@@ -1,11 +1,5 @@
 public class Runner {
     public static void main(String[] args){
-        //bubbleSort int
-        long time = System.nanoTime();
-        SortingMethods.bubbleSort(SortingUtil.randIntArr(100));
-        time=System.nanoTime() - time;
-        System.out.println("bubbleSort(int) Time Taken: " + time+"\n");
-
 
         //bubbleSort String
         long time2 = System.nanoTime();
