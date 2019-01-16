@@ -68,6 +68,7 @@ public class SortingMethods {
 
     public static void selectionSort(double[] arr){
         SortingUtil.printArray(arr);
+        double[] copy = SortingUtil.copyDoubleArray(arr);
         int minPos = 0;
         //i == currentPostion;
         for(int i = 0; i < arr.length - 1;i++){
@@ -82,7 +83,7 @@ public class SortingMethods {
             SortingUtil.swap(arr,i,minPos);
         }
 
-        if (SortingUtil.isSorted(arr)) {
+        if (SortingUtil.isSorted(arr) && SortingUtil.checkSum(copy,arr)) {
             SortingUtil.printArray(arr);
         }
         else{
@@ -92,6 +93,7 @@ public class SortingMethods {
 
     public static void insertionSort(int[]arr){
         SortingUtil.printArray(arr);
+        int[] copy = SortingUtil.copyIntArray(arr);
         for (int i=1; i< arr.length; i++){
             int currentPos=i;
             while(!(currentPos==0) && arr[currentPos]< arr[currentPos-1]){
@@ -100,7 +102,7 @@ public class SortingMethods {
 
             }
         }
-        if (SortingUtil.isSorted(arr)) {
+        if (SortingUtil.isSorted(arr) && SortingUtil.checkSum(copy,arr)) {
             SortingUtil.printArray(arr);
         }
         else{

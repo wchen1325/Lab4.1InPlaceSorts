@@ -81,9 +81,9 @@ public class SortingUtil {
     public static boolean checkSum(int[] before, int[] after){
         int bSum=0;
         int aSum=0;
-        if (!(before.length==after.length)){
+        /*if (!(before.length==after.length)){
             return false;
-        }
+        }*/
         for(int i =0; i <before.length -1; i++){
             bSum=bSum+before[i];
             aSum=aSum+after[i];
@@ -94,9 +94,9 @@ public class SortingUtil {
     public static boolean checkSum(double[] before, double[] after){
         double bSum=0;
         double aSum=0;
-        if (!(before.length==after.length)){
+        /*if (!(before.length==after.length)){
             return false;
-        }
+        }*/
         for(int i =0; i <before.length -1; i++){
             bSum=bSum+before[i];
             aSum=aSum+after[i];
