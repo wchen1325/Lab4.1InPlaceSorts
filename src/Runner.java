@@ -1,6 +1,6 @@
 public class Runner {
     /**
-     * @author Wei Chen, I.Soha
+     * @author Wei Chen, Ishrat Soha
      * @version January 2019
      */
     public static void main(String[] args){
